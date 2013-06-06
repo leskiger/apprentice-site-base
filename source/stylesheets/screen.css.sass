@@ -1,17 +1,30 @@
 // Web fonts
+// Use this section to import any custom fonts you want to use in your design.
+// To find fonts go to http://www.google.com/fonts/
 @import url(http://fonts.googleapis.com/css?family=Montserrat)
 @import url(http://fonts.googleapis.com/css?family=Belgrano)
 
-// Your own styles go here.
-
-// Idiomatic customisation of twitter bootstrap is 
+// Idiomatic customisation of Twitter Bootstrap is
 // via use of variables that they provide for precisely
 // this purpose. For example:
-
 $bodyBackground:  #F1F1F1
 $textColor:       #393536
 $sansFontFamily:  "Montserrat"
 $serifFontFamily: "Belgrano"
+// For a full list of Bootstrap variable, see https://github.com/twitter/bootstrap/blob/master/less/variables.less
+
+
+// Twitter Bootstrap
+// These lines import the Twitter Bootstrap styles into this sheet. So when you
+// load up the generated screen.css you will see all of those styles in the middle here.
+// This is why the variable get assigned up above. That away when bootstrap comes through
+// and gets processed it uses your values instead of the defaults.
+@import 'bootstrap'
+@import 'bootstrap-responsive'
+
+// Overrides to Bootstrap CSS go here. It is always preferabble
+// to use the variable section above is possible. If not though,
+// this is where they go.
 
 body
   // Without this (borrowed from one of the bootstrap samples) the bootstrap navbar
@@ -22,7 +35,4 @@ body
   footer
     padding-top: 20px
 
-// Twitter Bootstrap
-@import 'bootstrap'
-@import 'bootstrap-responsive'
 
