@@ -60,7 +60,7 @@ SASS has a cousin called [Haml](http://haml.info/) which makes it really easy to
 
 So instead of writing:
 
-  <div class="row">
+    <div class="row">
       <div class="span6">
         <p>
           This is column 1. It is half the width of the page (it spans 6 of 12 grid lines)
