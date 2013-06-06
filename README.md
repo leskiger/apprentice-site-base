@@ -21,19 +21,19 @@ This project includes the [Twitter Bootstrap](http://twitter.github.io/bootstrap
 
 For example, Bootstrap defines a 12-column grid for your layout. So, say you want to create a three column row with the first column using half the page and the other two splitting the difference:
 
-  .row
-    .span6
-      This is column 1. It is half the width of the page (it spans 6 of 12 grid lines)
-    .span3
-      This is column 2 It is 1/4 of the page (it spans 3 of 12 grid lines)
-    .span3
-      This is column 2 It is 1/4 of the page (it spans 3 of 12 grid lines)
+    .row
+      .span6
+        This is column 1. It is half the width of the page (it spans 6 of 12 grid lines)
+      .span3
+        This is column 2 It is 1/4 of the page (it spans 3 of 12 grid lines)
+      .span3
+        This is column 2 It is 1/4 of the page (it spans 3 of 12 grid lines)
 
 Bootstrap also provides a lot of convenient styling for basic typography, navigation, tabs, slideshow, forms, etc. See the [example reference](http://twitter.github.io/bootstrap/scaffolding.html) for ideas.
 
 One of the great things about Bootstrap is that it is easy to override the defaults. For example, lets say you wanted your page to have a blue background instead of a gray background. All you have to do is change the value of a variable in your screen.css.sass file:
 
-  $bodyBackground:  #CFF1FF
+    $bodyBackground:  #CFF1FF
 
 Which brings us to SASS...
 
@@ -43,10 +43,10 @@ This project is setup with the [SASS](http://sass-lang.org) CSS language. SASS b
 
 For example, say you wanted some of your text to have a yellow-highlight background:
 
-  $highlightBackground: #FFFDAB
-  ...
-  .highlight:
-    background-color: $highlightBackground
+    $highlightBackground: #FFFDAB
+    ...
+    .highlight:
+      background-color: $highlightBackground
 
 You also want to have some columns be highlighted, so you add background-color: $highlightBackground to several places. Then you realize the yellow isn't quite right. Since you used SASS and variables, instead of having to find all the places and change them, you just change the one value for $highlightBackground from #FFFDAB to #FFF65D.
 
@@ -61,32 +61,32 @@ SASS has a cousin called [Haml](http://haml.info/) which makes it really easy to
 So instead of writing:
 
   <div class="row">
-    <div class="span6">
-      <p>
-        This is column 1. It is half the width of the page (it spans 6 of 12 grid lines)
-      </p>
+      <div class="span6">
+        <p>
+          This is column 1. It is half the width of the page (it spans 6 of 12 grid lines)
+        </p>
+      </div>
+      <div class="span3">
+        <p>
+          This is column 2 It is 1/4 of the page (it spans 3 of 12 grid lines)
+        </p>
+      </div>
+      <div class="span3">
+        <p>
+          This is column 2 It is 1/4 of the page (it spans 3 of 12 grid lines)
+        </p>
+      </div>
     </div>
-    <div class="span3">
-      <p>
-        This is column 2 It is 1/4 of the page (it spans 3 of 12 grid lines)
-      </p>
-    </div>
-    <div class="span3">
-      <p>
-        This is column 2 It is 1/4 of the page (it spans 3 of 12 grid lines)
-      </p>
-    </div>
-  </div>
 
 You can just write:
 
-  .row
-    .span6
-      This is column 1. It is half the width of the page (it spans 6 of 12 grid lines)
-    .span3
-      This is column 2 It is 1/4 of the page (it spans 3 of 12 grid lines)
-    .span3
-      This is column 2 It is 1/4 of the page (it spans 3 of 12 grid lines)
+    .row
+      .span6
+        This is column 1. It is half the width of the page (it spans 6 of 12 grid lines)
+      .span3
+        This is column 2 It is 1/4 of the page (it spans 3 of 12 grid lines)
+      .span3
+        This is column 2 It is 1/4 of the page (it spans 3 of 12 grid lines)
 
 This makes it not only easier to read the code, but also cuts out a lot of the possibilities for making mistakes by accidentally leaving off a < or a / or something silly like that.
 
